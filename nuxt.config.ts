@@ -31,6 +31,9 @@ export default defineNuxtConfig({
     static: true,
     output: {
       publicDir: path.join(__dirname, '/docs')
+    },
+    router: {
+      base: '/'
     }
   },
   content: {
