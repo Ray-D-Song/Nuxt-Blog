@@ -3,8 +3,8 @@
     <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-sm z-10 bg-gray-300 dark:bg-gray-900 justify-between h-16 shadow-sm">
       <div class="flex items-center" @click="handleRedirect(1)">
         <Icon
-          name="bi:lightning-fill"
-          class="w-9 h-9 hover:text-amber-400 mx-3 mt-3 cursor-pointer"/>
+          name="oi:code"
+          class="w-12 h-12 ml-5 font-bold hover:dark:text-blue-300 hover:text-blue-600 mx-3 mt-3 cursor-pointer"/>
       </div>
       <div class="flex items-center">
         <UButton

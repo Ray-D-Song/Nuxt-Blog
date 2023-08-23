@@ -1,12 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator>
-      <div class="w-screen h-screen flex flex-col items-center justify-center z-50" color="#ffffff">
-        <div class="text-3xl blur-sm">
-          Just wait a moment...
-        </div>
-      </div>
-    </NuxtLoadingIndicator>
+    <LoadingBar v-show="loadingVisible"/>
     <NuxtPage />
   </NuxtLayout>
 </template>
@@ -14,9 +8,50 @@
 <script setup lang="ts">
 import './app.css'
 import './assets/global.scss'
+// @ts-expect-error virtual file
+import { globalMiddleware } from '#build/middleware'
+const router = useRouter()
+const nuxtApp = useNuxtApp()
 
-const colorMode = useColorMode()
-// const loadingBarColor = computed(() => {
-//   return colorMode.preference === 'light'?'#201A18':'#ffffff'
-// })
+const loadingVisible = ref(false)
+
+const closeLoading = () => {
+  loadingVisible.value = false
+}
+
+const startLoading = () => {
+  loadingVisible.value = true
+}
+
+globalMiddleware.unshift(() => {
+  startLoading()
+})
+
+router.onError(() => {
+  closeLoading()
+})
+
+router.beforeResolve((to, from) => {
+  if (to === from || to.matched.every((comp, index) => comp.components && comp.components?.default === from.matched[index]?.components?.default)) {
+    closeLoading()
+  }
+})
+
+router.afterEach((_to, _from, failure) => {
+  if (failure) {
+    closeLoading()
+  }
+})
+
+const unsubPage = nuxtApp.hook('page:finish', closeLoading)
+const unsubError = nuxtApp.hook('vue:error', closeLoading)
+
+onBeforeUnmount(() => {
+  const index = globalMiddleware.indexOf(startLoading)
+  if (index >= 0) {
+    globalMiddleware.splice(index, 1)
+  }
+  unsubPage()
+  unsubError()
+})
 </script>
