@@ -51,9 +51,6 @@ devDependencies:
   clipboard-polyfill:
     specifier: ^4.0.0
     version: 4.0.0
-  husky:
-    specifier: ^8.0.3
-    version: 8.0.3
   nuxt:
     specifier: ^3.6.2
     version: 3.6.2(@types/node@20.4.5)(sass@1.63.6)(typescript@5.1.6)(vue-tsc@1.8.8)
@@ -4301,12 +4298,6 @@ packages:
     resolution: {integrity: sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==}
     dependencies:
       ms: 2.1.3
-    dev: true
-
-  /husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /iconv-lite@0.6.3:

@@ -4,7 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && ./bin/nojekyll",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "create": "./bin/createContent",
@@ -17,7 +17,6 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.4.5",
     "clipboard-polyfill": "^4.0.0",
-    "husky": "^8.0.3",
     "nuxt": "^3.6.2",
     "sitemap": "^7.1.1"
   },
