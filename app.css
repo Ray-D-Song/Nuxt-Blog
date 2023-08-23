@@ -90,7 +90,6 @@
 }
 
 body {
-  min-height: 682px;
   @apply
   transition-colors
   duration-300

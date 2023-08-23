@@ -40,7 +40,7 @@
         <slot />
       </div>
     </div>
-    <div class="mt-12 pb-6 text-sm text-center opacity-50 w-full self-end">
+    <div class="mt-12 pb-6 text-sm text-center opacity-50 w-full fixed bottom-0">
       <div>Built with Nuxt 3</div>
       Copyright 2023 © Ray Song
     </div>
