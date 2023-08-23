@@ -12,15 +12,19 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
   ],
-  // app: {
-  //   baseURL: 'ray-d-song.github.io/'
-  // },
   colorMode: {
     preference: 'dark'
   },
   ssr: true,
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
+  },
+  app: {
+    head: {
+      link: [
+        {rel: 'icon', type: 'image/svg+xml', href: "/code.svg"}
+      ]
+    }
   },
   nitro: {
     routeRules: {
