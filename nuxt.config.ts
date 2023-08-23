@@ -12,9 +12,9 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
   ],
-  app: {
-    baseURL: '/Ray-D-Song.github.io/'
-  },
+  // app: {
+  //   baseURL: 'ray-d-song.github.io/'
+  // },
   colorMode: {
     preference: 'dark'
   },
@@ -34,8 +34,7 @@ export default defineNuxtConfig({
     static: true,
     output: {
       publicDir: path.join(__dirname, '/docs')
-    },
-    
+    }
   },
   content: {
     highlight: {
