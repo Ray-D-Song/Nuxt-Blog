@@ -90,9 +90,14 @@
 }
 
 body {
+  min-height: 682px;
   @apply
   transition-colors
   duration-300
   selection:bg-select-light
   selection:dark:bg-select-dark
+}
+
+#__nuxt {
+  height: 682px;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen items-start flex-col justify-between">
+  <div class="flex items-start min-h-full flex-col justify-between">
     <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-sm z-10 bg-gray-300 dark:bg-gray-900 justify-between h-16 shadow-sm">
       <div class="flex items-center" @click="handleRedirect(1)">
         <Icon

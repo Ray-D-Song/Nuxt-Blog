@@ -12,9 +12,15 @@ module.exports = {
         'select-dark': '#353535',
         'select-light': '#AFC4D5'
       },
+      height: {
+        'test': '10000px'
+      },
       width: {
         '9/10': '90%',
         '7/10': '70%'
+      },
+      spacing: {
+        '24p': '24%'
       }
     },
   },
