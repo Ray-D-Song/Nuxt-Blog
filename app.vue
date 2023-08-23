@@ -1,5 +1,10 @@
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator>
+      <div class="text-3xl">
+        Just wait a moment...
+      </div>
+    </NuxtLoadingIndicator>
     <NuxtPage />
   </NuxtLayout>
 </template>

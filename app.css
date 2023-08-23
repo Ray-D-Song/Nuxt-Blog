@@ -90,6 +90,7 @@
 }
 
 body {
+  height: 90%;
   @apply
   transition-colors
   duration-300
@@ -98,5 +99,9 @@ body {
 }
 
 #__nuxt {
-  height: 682px;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
