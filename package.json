@@ -4,10 +4,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate && ./bin/nojekyll",
+    "generate": "nuxt generate && ./bin/subsequent_task",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "create": "./bin/createContent",
+    "create": "./bin/create_content",
     "nojekyll": "./bin/nojekyll"
   },
   "devDependencies": {
