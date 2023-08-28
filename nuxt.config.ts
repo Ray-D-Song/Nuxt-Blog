@@ -15,6 +15,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark'
   },
+  experimental: {
+    payloadExtraction: true
+  },
   ssr: true,
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
