@@ -4,7 +4,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate && ./bin/subsequent_task",
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && ./bin/subsequent_task",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "create": "./bin/create_content",
