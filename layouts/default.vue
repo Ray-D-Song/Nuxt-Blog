@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-start min-h-full flex-col justify-between">
-    <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-sm z-10 bg-gray-300 dark:bg-gray-900 justify-between h-16 shadow-sm">
+    <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-sm z-10 bg-gray-300 dark:bg-gray-900 justify-between h-12 shadow-sm">
       <div class="flex items-center" @click="handleRedirect(1)">
         <Icon
           name="oi:code"
-          class="w-12 h-12 ml-5 font-bold hover:dark:text-blue-300 hover:text-blue-600 mx-3 mt-3 cursor-pointer"/>
+          class="w-12 h-12 ml-5 mb-3 font-bold hover:dark:text-blue-300 hover:text-blue-600 mx-3 mt-3 cursor-pointer"/>
       </div>
       <div class="flex items-center">
         <UButton
