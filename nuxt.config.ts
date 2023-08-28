@@ -12,9 +12,6 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
   ],
-  experimental: {
-    payloadExtraction: false
-  },
   colorMode: {
     preference: 'dark'
   },
