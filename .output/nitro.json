@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "date": "2023-08-28T14:59:52.535Z",
-=======
-  "date": "2023-08-25T05:57:37.683Z",
->>>>>>> d40ea2c4570f7a7fa89de7e6548bd23e26307035
+  "date": "2023-08-28T15:03:20.987Z",
   "preset": "static",
   "commands": {
     "preview": "npx serve ./public"
