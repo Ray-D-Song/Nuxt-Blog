@@ -4,7 +4,7 @@
         <description><![CDATA[只是作为码农发牢骚的地方罢了]]></description>
         <link>https://ray-d-song.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 28 Aug 2023 15:05:51 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Sep 2023 19:25:49 GMT</lastBuildDate>
         <atom:link href="https://ray-d-song.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[协程(Coroutine)和纤程(Fiber)]]></title>
@@ -12,6 +12,13 @@
             <link>https://ray-d-song.com/post/1692667782462</link>
             <guid isPermaLink="false">https://ray-d-song.com/post/1692667782462</guid>
             <pubDate>Tue, 22 Aug 2023 01:29:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[tailwind css的价值]]></title>
+            <description><![CDATA[tailwind 一直饱受非议, 其中说的最多的大概就是「我为什么不直接写内联样式?」. 其实 tailwind 不仅是简写了样式名这么简单, 它是一系列便利的封装.]]></description>
+            <link>https://ray-d-song.com/post/1693682341339</link>
+            <guid isPermaLink="false">https://ray-d-song.com/post/1693682341339</guid>
+            <pubDate>Sat, 02 Sep 2023 19:19:01 GMT</pubDate>
         </item>
     </channel>
 </rss>
