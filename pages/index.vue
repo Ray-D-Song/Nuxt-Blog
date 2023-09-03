@@ -30,5 +30,5 @@ type Content = ParsedContent & {
   description: string
 }
 
-const contentList = <unknown>(await queryContent('/').find()) as Content
+const contentList = <unknown>(await queryContent('/').find()).reverse() as Content
 </script>

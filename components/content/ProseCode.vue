@@ -1,9 +1,11 @@
 <template>
   <Toast :title="title" :class="`transition-all duration-300 ${showToast?'opacity-100':'opacity-0'}`" />
   <div class="dark:bg-code-dark bg-code-light rounded-md dark:shadow-white/5 shadow-inner shadow-black/5 shadow-sm">
-    <div class="opacity-60 dark:border-b-indigo-400 border-b-black/20 border-b-2 pb-2 pl-4">{{language}}</div>
+    <div class="dark:border-b-indigo-400 border-b-black/20 border-b-2 flex flex-row justify-between">
+      <div class="opacity-60 pb-2 pl-4">{{language}}</div>
+      <UButton icon="i-eva-copy-fill" @click="copyCode" size="sm" variant="ghost" :padding="false" class="icon-button">copy</UButton>
+    </div>
     <div class="relative">
-      <UButton icon="i-eva-copy-fill" @click="copyCode" size="sm" variant="ghost" :padding="false" class="icon-button absolute top-2 right-4">copy</UButton>
       <slot />
     </div>
   </div>
