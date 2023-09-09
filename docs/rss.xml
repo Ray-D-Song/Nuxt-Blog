@@ -4,7 +4,7 @@
         <description><![CDATA[只是作为码农发牢骚的地方罢了]]></description>
         <link>https://ray-d-song.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 09 Sep 2023 07:17:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Sep 2023 08:48:17 GMT</lastBuildDate>
         <atom:link href="https://ray-d-song.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[协程(Coroutine)和纤程(Fiber)]]></title>
@@ -26,6 +26,13 @@
             <link>https://ray-d-song.com/post/1694241377468</link>
             <guid isPermaLink="false">https://ray-d-song.com/post/1694241377468</guid>
             <pubDate>Sat, 09 Sep 2023 06:36:17 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[并发与并行]]></title>
+            <description><![CDATA[这是一篇小短文, 白话文给自己归纳关于并发和并行的知识.]]></description>
+            <link>https://ray-d-song.com/post/1694247812862</link>
+            <guid isPermaLink="false">https://ray-d-song.com/post/1694247812862</guid>
+            <pubDate>Sat, 09 Sep 2023 08:23:32 GMT</pubDate>
         </item>
     </channel>
 </rss>
