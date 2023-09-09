@@ -1,99 +1,99 @@
-.title {
-  @apply text-3xl text-center font-bold;
-}
+@layer{
+  .title {
+    @apply text-3xl text-center font-bold;
+  }
 
-.flex-center {
-  @apply flex flex-col items-center;
-}
+  .flex-center {
+    @apply flex flex-col items-center;
+  }
 
-.text-button {
-  @apply opacity-70 hover:opacity-100;
-}
+  .text-button {
+    @apply opacity-70 hover:opacity-100;
+  }
 
-.icon-button {
-  @apply opacity-70 hover:opacity-100 mr-3;
-}
+  .icon-button {
+    @apply opacity-70 hover:opacity-100 mr-3;
+  }
 
-.icon-button-home {
-  @apply opacity-70 hover:opacity-100 mx-3;
-}
+  .icon-button-home {
+    @apply opacity-70 hover:opacity-100 mx-3;
+  }
 
-.toast {
-  transform: translate(-50%, -50%);
-  @apply
-  z-20
-  text-white
-  dark:text-black
-  top-10
-  left-1/2
-  w-72
-  shadow-black/30
-  shadow-xl
-  flex
-  justify-center
-  items-center
-  rounded-xl
-  h-12
-  bg-black
-  dark:bg-white
-  shadow
-  shadow-lg
-  dark:shadow-white/30
-  fixed
-}
+  .toast {
+    transform: translate(-50%, -50%);
+    @apply
+    z-20
+    text-white
+    dark:text-black
+    top-10
+    left-1/2
+    w-72
+    shadow-black/30
+    shadow-xl
+    flex
+    justify-center
+    items-center
+    rounded-xl
+    h-12
+    bg-black
+    dark:bg-white
+    shadow
+    shadow-lg
+    dark:shadow-white/30
+    fixed
+  }
 
-.markdown {
-  @apply
-  prose-headings:opacity-80
-  prose-headings:my-3
+  .markdown {
+    @apply
+    prose-headings:opacity-80
+    prose-headings:my-3
 
-  prose-h1:text-3xl
-  prose-h1:mt-5
+    prose-h1:text-3xl
+    prose-h1:mt-5
 
-  prose-h2:text-2xl
+    prose-h2:text-2xl
 
-  prose-h3:text-xl
+    prose-h3:text-xl
 
-  prose-pre:p-2
-  /*prose-pre:bg-code-light*/
-  /*prose-pre:dark:bg-code-dark*/
+    prose-pre:p-2
 
-  prose-code:text-sm
-  prose-code:dark:text-blue-300
-  prose-code:text-blue-800
-  prose-code:font-medium
+    prose-code:text-sm
+    prose-code:dark:text-blue-300
+    prose-code:text-blue-800
+    prose-code:font-medium
 
-  prose-blockquote:dark:bg-slate-800
-  prose-blockquote:bg-slate-300
-  prose-blockquote:py-1
-  prose-blockquote:pl-2
-  prose-blockquote:border-l-cyan-700
-  prose-blockquote:border-l-8
+    prose-blockquote:dark:bg-slate-800
+    prose-blockquote:bg-slate-300
+    prose-blockquote:py-1
+    prose-blockquote:pl-2
+    prose-blockquote:border-l-cyan-700
+    prose-blockquote:border-l-8
 
-  prose-p:opacity-80
-  prose-td:opacity-80
-  prose-th:opacity-80
-  prose-ul:opacity-80
-  prose-hr:opacity-90
+    prose-p:opacity-80
+    prose-td:opacity-80
+    prose-th:opacity-80
+    prose-ul:opacity-80
+    prose-hr:opacity-90
 
-  prose-img:w-2/5
-  prose-img:mx-auto
-  prose-img:my-5
+    prose-img:w-2/5
+    prose-img:mx-auto
+    prose-img:my-5
 
-  prose-a:underline
-  prose-a:mx-1
+    prose-a:underline
+    prose-a:mx-1
 
-  prose-li:text-sm
-  prose-li:ml-4
-  prose-li:my-2
+    prose-li:text-sm
+    prose-li:ml-4
+    prose-li:my-2
 
-  prose-ol:list-decimal
+    prose-ol:list-decimal
 
-  prose-ul:list-disc
+    prose-ul:list-disc
 
-  prose-p:my-3
+    prose-p:my-3
 
-  prose-pre:overflow-x-auto
+    prose-pre:overflow-x-auto
+  }
 }
 
 body {
