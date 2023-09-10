@@ -79,7 +79,10 @@
     prose-ul:opacity-80
     prose-hr:opacity-90
 
-    prose-img:w-2/5
+    prose-img:min-w-[40%]
+    prose-img:max-w-[80%]
+    prose-img:max-h-[400px]
+    prose-img:object-scale-down
     prose-img:mx-auto
     prose-img:my-5
 
