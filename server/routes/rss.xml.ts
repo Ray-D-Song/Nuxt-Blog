@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     feed_url: domain + '/rss.xml'
   })
 
-  for (const doc of docs) {
+  for (const doc of docs.reverse()) {
     feed.item({
       title: doc.title as string,
       url: domain + `/post${doc._path}`,
