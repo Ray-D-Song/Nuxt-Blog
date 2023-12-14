@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>https://ray-d-song.com</loc>
-      <lastmod>2023-09-10</lastmod>
+      <lastmod>2023-12-14</lastmod>
       <changefreq>monthly</changefreq>
     </url>
     <url>
@@ -32,6 +32,12 @@
     <url>
       <loc>https://ray-d-song.com/post/1694340688292</loc>
       <lastmod>2023-09-10</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+      <loc>https://ray-d-song.com/post/1701870426245</loc>
+      <lastmod>2023-12-06</lastmod>
       <changefreq>monthly</changefreq>
     </url>
 </urlset>

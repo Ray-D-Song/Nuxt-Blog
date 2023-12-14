@@ -4,7 +4,7 @@
         <description><![CDATA[只是作为码农发牢骚的地方罢了]]></description>
         <link>https://ray-d-song.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 10 Sep 2023 10:42:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Dec 2023 09:59:50 GMT</lastBuildDate>
         <atom:link href="https://ray-d-song.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[协程(Coroutine)和纤程(Fiber)]]></title>
@@ -40,6 +40,13 @@
             <link>https://ray-d-song.com/post/1694340688292</link>
             <guid isPermaLink="false">https://ray-d-song.com/post/1694340688292</guid>
             <pubDate>Sun, 10 Sep 2023 10:11:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Vue 使用 Vitest进行单元测试]]></title>
+            <description><![CDATA[笔者过去并没有写过前端单测, 只在例如 Go 这样社区大力推崇 TDD 的语言中实践过, 最近遇到很多前端通过人肉测试难以覆盖的场景, 因此尝试 vitest.]]></description>
+            <link>https://ray-d-song.com/post/1701870426245</link>
+            <guid isPermaLink="false">https://ray-d-song.com/post/1701870426245</guid>
+            <pubDate>Wed, 06 Dec 2023 13:47:06 GMT</pubDate>
         </item>
     </channel>
 </rss>

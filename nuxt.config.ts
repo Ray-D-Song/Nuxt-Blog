@@ -64,7 +64,8 @@ export default defineNuxtConfig({
         'dockerfile',
         'c',
         'cpp',
-        'kotlin'
+        'kotlin',
+        'toml'
       ]
     }
   }
