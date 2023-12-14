@@ -99,6 +99,8 @@
 
     prose-p:my-5
 
+    prose-p:leading-relaxed
+
     prose-pre:overflow-x-auto
   }
 }
