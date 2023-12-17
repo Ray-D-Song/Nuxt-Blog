@@ -26,4 +26,14 @@ const time = computed(() => {
 
 const readCountObj = await useAsyncData('readCount', () => $fetch(`/api/getReadCount/${timestamp}`))
 const readCount = readCountObj.data
+
+useHead({
+	title: data.value?.title + " ————Ray's Blog"
+})
+
+useSeoMeta({
+	title: data.value?.title + " ————Ray's Blog",
+	ogTitle: data.value?.title + " ————Ray's Blog",
+	description: '这是某个不知名开发者的兴趣博客'
+})
 </script>

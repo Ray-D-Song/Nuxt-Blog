@@ -31,4 +31,14 @@ type Content = ParsedContent & {
 }
 
 const contentList = <unknown>(await queryContent('/').find()).reverse() as Content
+
+useHead({
+	title: "Ray-D-Song's Blog"
+})
+
+useSeoMeta({
+	title: "Ray-D-Song's Blog",
+	ogTitle: "Ray-D-Song's Blog",
+	description: '这是某个不知名开发者的兴趣博客'
+})
 </script>
