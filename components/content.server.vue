@@ -24,5 +24,6 @@ const time = computed(() => {
   return formattedDate
 })
 
-const readCount = (await useFetch('/api/getReadCount')).data
+const readCountObj = await useAsyncData('readCount', () => $fetch(`/api/getReadCount/${timestamp}`))
+const readCount = readCountObj.data
 </script>

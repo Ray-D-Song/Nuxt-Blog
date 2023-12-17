@@ -1,6 +1,7 @@
 export default defineEventHandler(async (event) => {
   try {
-    const response = await $fetch(`https://worker.ray-d-song.com/read/1692667782462`, {
+    const articleId = getRouterParam(event, 'articleId')
+    const response = await $fetch(`https://worker.ray-d-song.com/read/${articleId}`, {
       method: 'get'
     })
     return response

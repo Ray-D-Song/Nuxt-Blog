@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     preference: 'dark'
   },
   experimental: {
-    payloadExtraction: true
+    payloadExtraction: true,
+    componentIslands: true
   },
   ssr: true,
   ui: {
