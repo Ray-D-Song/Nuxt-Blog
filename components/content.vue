@@ -2,7 +2,10 @@
   <div>
     <div>
       <h1 class="text-4xl text-center font-bold my-2">{{data.title}}</h1>
-      <h4 class="text-center font-mono mb-5">{{time}}</h4>
+      <span class="font-mono mb-5 flex justify-center w-full">
+        <span class="mr-2">{{time}}</span>
+        <span class="ml-2">阅读数: {{readCount}}</span>
+      </span>
     </div>
     <ContentRenderer :value="data" class="markdown"/>
   </div>
@@ -20,4 +23,6 @@ const time = computed(() => {
   const formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`
   return formattedDate
 })
+
+const readCount = (await useFetch('/api/getReadCount')).data
 </script>

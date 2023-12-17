@@ -35,13 +35,13 @@ export default defineNuxtConfig({
         proxy: 'http://127.0.0.1:9000/api/v1/**',
       }
     },
-    prerender: {
-      routes: ['/sitemap.xml', '/rss.xml', ...pathList]
-    },
-    static: true,
-    output: {
-      publicDir: path.join(__dirname, '/docs')
-    }
+    // prerender: {
+    //   routes: ['/sitemap.xml', '/rss.xml', ...pathList]
+    // },
+    // static: true,
+    // output: {
+    //   publicDir: path.join(__dirname, '/docs')
+    // }
   },
   content: {
     highlight: {
@@ -65,7 +65,8 @@ export default defineNuxtConfig({
         'c',
         'cpp',
         'kotlin',
-        'toml'
+        'toml',
+        'sql'
       ]
     }
   }

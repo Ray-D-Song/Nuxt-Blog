@@ -1,6 +1,7 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,7 +10,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "create": "./bin/create_content",
-    "nojekyll": "./bin/nojekyll"
+    "nojekyll": "./bin/nojekyll",
+    "pre-commit": "node ./bin/pre_commit.js",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -20,7 +23,8 @@
     "clipboard-polyfill": "^4.0.0",
     "nuxt": "^3.6.2",
     "sitemap": "^7.1.1",
-    "vitest": "^1.0.1"
+    "vitest": "^1.0.1",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "@iconify/json": "^2.2.89",
@@ -28,7 +32,9 @@
     "@nuxtjs/color-mode": "^3.3.0",
     "@types/rss": "^0.0.30",
     "glob": "^10.3.3",
+    "node-fetch-native": "^1.4.1",
     "nuxt-icon": "^0.4.2",
+    "pino": "^8.17.1",
     "rss": "^1.2.2",
     "sass": "^1.63.6",
     "typescript": "5.1.6",
