@@ -9,7 +9,7 @@
         <span class="mr-12 text-sm dark:text-white/60 text-black/60">
           {{ parsePath2Time(c._path) }}
         </span>
-        <span class="text-xl font-mono font-medium">
+        <span class="text-xl font-mono font-medium truncate">
           {{ c.title }}
         </span>
       </div>
