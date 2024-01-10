@@ -18,7 +18,7 @@
             />
             <input v-model="searchParams" @input="handleSearch" class="focus:border-none focus:outline-none focus:appearance-none rounded-r-lg pl-2" />
           </div>
-          <div v-if="resultVisible&&searchResults.length!==0" class="z-50 fixed top-13 mt-1 bg-white border-black/10 opacity-100 border dark:border-white/10 dark:bg-neutral-800 w-80 rounded-md py-4">
+          <div v-if="resultVisible&&searchResults.length!==0" class="z-50 fixed top-13 mt-1 bg-white border-black/10 opacity-100 border dark:border-white/10 dark:bg-neutral-800 w-40 md:w-80 rounded-md py-4">
             <div v-for="item in searchResults.slice(0, 6)" @click="handleGoArticle(parseSearchResultItem(item.id))" class="w-80 hover:bg-black/30 flex flex-col items-center my-2 hover:cursor-pointer">
               <span class="dark:text-white/60 text-black/60 w-72 truncate">
 								{{ id2Title(parseSearchResultItem(item.id)) }}
