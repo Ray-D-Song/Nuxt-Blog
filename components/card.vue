@@ -7,9 +7,6 @@
       <div class="text-2xl mb-2 font-medium">
         {{$props.title}}
       </div>
-<!--      <div class="opacity-75">-->
-<!--        {{$props.description}}-->
-<!--      </div>-->
     </div>
   </div>
 </template>

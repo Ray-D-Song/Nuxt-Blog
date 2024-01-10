@@ -1,13 +1,18 @@
 <template>
   <div class="flex flex-row w-full justify-center">
     <div class="flex flex-col items-center">
-      <Card
-        v-for="p in contentList"
-        :title="p.title"
-        :description="p.description"
-        :cover="p.cover"
-        :_path="p._path"
-      />
+      <div
+        v-for="c in contentList"
+        @click="handleGoArticle(c._path)"
+        class="hover:cursor-pointer dark:text-white/80 text-black/80 m-5 w-full"
+        >
+        <span class="mr-12 text-sm dark:text-white/60 text-black/60">
+          {{ parsePath2Time(c._path) }}
+        </span>
+        <span class="text-xl font-mono font-medium">
+          {{ c.title }}
+        </span>
+      </div>
     </div>
     <div class="hidden md:block md:ml-16 markdown w-96">
     </div>
@@ -22,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import Card from '~/components/card.vue'
 import type {ParsedContent} from '@nuxt/content/dist/runtime/types'
 
 type Content = ParsedContent & {
@@ -30,7 +34,24 @@ type Content = ParsedContent & {
   description: string
 }
 
+function parsePath2Time(path: string) {
+  const timestamp = path.slice(1)
+  const date = new Date(Number(timestamp))
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  
+  return `${year}/${month}/${day}`
+}
+
 const contentList = <unknown>(await queryContent('/').find()).reverse() as Content
+
+const router = useRouter()
+const handleGoArticle = (path: string) => {
+  router.push({
+    path: 'post' + path,
+  })
+}
 
 useHead({
 	title: "Ray-D-Song's Blog"

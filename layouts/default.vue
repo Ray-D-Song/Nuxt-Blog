@@ -4,7 +4,7 @@
       <div class="flex items-center" @click="handleRedirect(1)">
         <Icon
           name="oi:code"
-          class="w-12 h-12 ml-5 mb-3 font-bold hover:dark:text-blue-300 hover:text-blue-600 mx-3 mt-3 cursor-pointer"/>
+          class="w-8 h-8 ml-5 mb-3 font-bold hover:scale-125 mx-3 mt-3 cursor-pointer transform transition duration-500"/>
       </div>
       <div class="flex items-center">
         <UButton
