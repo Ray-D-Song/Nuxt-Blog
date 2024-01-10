@@ -93,12 +93,12 @@ const searchResults = ref<SearchResultItem[]>([])
 async function search() {
   // @ts-ignore
   searchResults.value = (await searchContent(searchParams)).value
-  console.log(searchResults.value)
 }
 const handleSearch = _.debounce(search, 500)
+const route = useRoute()
 function handleGoArticle(path: string) {
 	router.push({
-		path: 'post/' + path,
+		path: (route.path.includes('post')?'':'post/') + path,
 	})
 }
 
