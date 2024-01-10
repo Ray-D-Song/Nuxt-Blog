@@ -2,7 +2,7 @@
   <div class="flex flex-row w-full justify-center">
     <div class="flex flex-col items-center">
       <div
-        v-for="c in contentList"
+        v-for="c in contentStore.contentList"
         @click="handleGoArticle(c._path)"
         class="hover:cursor-pointer dark:text-white/80 text-black/80 m-5 w-full flex flex-col"
         >
@@ -26,24 +26,10 @@
 </template>
 
 <script setup lang="ts">
-import type {ParsedContent} from '@nuxt/content/dist/runtime/types'
+import { parsePath2Time } from '~/utils/parser'
+import { useContentStore } from '~/store/content'
 
-type Content = ParsedContent & {
-  cover: string
-  description: string
-}
-
-function parsePath2Time(path: string) {
-  const timestamp = path.slice(1)
-  const date = new Date(Number(timestamp))
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  
-  return `${year}/${month}/${day}`
-}
-
-const contentList = <unknown>(await queryContent('/').find()).reverse() as Content
+const contentStore = useContentStore()
 
 const router = useRouter()
 const handleGoArticle = (path: string) => {
@@ -55,7 +41,6 @@ const handleGoArticle = (path: string) => {
 useHead({
 	title: "Ray-D-Song's Blog"
 })
-
 useSeoMeta({
 	title: "Ray-D-Song's Blog",
 	ogTitle: "Ray-D-Song's Blog",
