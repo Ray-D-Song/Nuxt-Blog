@@ -4,7 +4,7 @@
       <div
         v-for="c in contentList"
         @click="handleGoArticle(c._path)"
-        class="hover:cursor-pointer dark:text-white/80 text-black/80 m-5 w-full"
+        class="hover:cursor-pointer dark:text-white/80 text-black/80 m-5 w-full flex flex-col"
         >
         <span class="mr-12 text-sm dark:text-white/60 text-black/60">
           {{ parsePath2Time(c._path) }}
