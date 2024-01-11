@@ -6,7 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import './app.css'
 import './assets/global.scss'
 // @ts-expect-error virtual file
 import { globalMiddleware } from '#build/middleware'

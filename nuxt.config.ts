@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark'
   },
+	css: ['~/assets/app.css'],
 	postcss: {
 		plugins: {
 			tailwindcss: {},
