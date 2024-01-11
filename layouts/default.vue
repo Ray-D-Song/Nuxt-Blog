@@ -62,8 +62,9 @@
     </div>
   </div>
   <div class="mt-12 pb-6 text-sm text-center opacity-50 w-full">
-      <div>Built with Nuxt 3</div>
-      Copyright 2023 © Ray Song
+		<div>Built with Nuxt 3</div>
+		Copyright 2023 © Ray Song
+		<SpeedInsights />
   </div>
 </template>
 
@@ -73,6 +74,7 @@ import * as clipboard from 'clipboard-polyfill'
 import type { SearchResultItem } from '~/layouts/types/default.type'
 import { parseContentWithKeyWord, parseSearchResultItem } from '../utils/parser'
 import { useContentStore } from '~/store/content'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 import _ from 'lodash'
 
 const colorMode = useColorMode()
