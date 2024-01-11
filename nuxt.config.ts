@@ -23,7 +23,10 @@ export default defineNuxtConfig({
     payloadExtraction: true,
     componentIslands: true
   },
-  ssr: true,
+	routeRules: {
+		'/': { prerender: true },
+		'/post/**': { prerender: true }
+	},
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
   },
