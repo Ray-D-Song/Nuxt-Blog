@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   },
 	routeRules: {
 		'/': { prerender: true },
-		'/post/**': { ssr: true }
+		'/post/**': { isr: true }
 	},
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
