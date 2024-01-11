@@ -11,6 +11,13 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark'
   },
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
+			...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+		}
+	},
   experimental: {
     payloadExtraction: true,
     componentIslands: true
