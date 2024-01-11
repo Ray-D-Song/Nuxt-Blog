@@ -1,54 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.title {
+  @apply text-3xl text-center font-bold;
+}
 
-@layer components{
-  .title {
-    @apply text-3xl text-center font-bold;
-  }
+.flex-center {
+  @apply flex flex-col items-center;
+}
 
-  .flex-center {
-    @apply flex flex-col items-center;
-  }
+.text-button {
+  @apply opacity-70 hover:opacity-100;
+}
 
-  .text-button {
-    @apply opacity-70 hover:opacity-100;
-  }
+.icon-button {
+  @apply opacity-70 hover:opacity-100 mr-3 hover:cursor-pointer h-[1.5rem] w-[1.5rem] dark:bg-white bg-black;
+}
 
-  .icon-button {
-    @apply opacity-70 hover:opacity-100 mr-3;
-  }
+.icon-button-home {
+  @apply opacity-70 hover:opacity-100 mx-3;
+}
 
-  .icon-button-home {
-    @apply opacity-70 hover:opacity-100 mx-3;
-  }
-
-  .toast {
-    transform: translate(-50%, -50%);
-    @apply
-    z-20
-    text-white
-    dark:text-black
-    top-10
-    left-1/2
-    w-72
-    shadow-black/30
-    shadow-xl
-    flex
-    justify-center
-    items-center
-    rounded-xl
-    h-12
-    bg-black
-    dark:bg-white
-    shadow
-    shadow-lg
-    dark:shadow-white/30
-    fixed
-  }
+.toast {
+  transform: translate(-50%, -50%);
+  @apply
+  z-20
+  text-white
+  dark:text-black
+  top-10
+  left-1/2
+  w-72
+  shadow-black/30
+  shadow-xl
+  flex
+  justify-center
+  items-center
+  rounded-xl
+  h-12
+  bg-black
+  dark:bg-white
+  shadow
+  shadow-lg
+  dark:shadow-white/30
+  fixed
+}
 
   .markdown {
     @apply
+		prose prose-p:text-red-400
     prose-headings:opacity-80
     prose-headings:my-3
 
@@ -103,7 +99,6 @@
 
     prose-pre:overflow-x-auto
   }
-}
 
 body {
   height: 90%;
@@ -112,6 +107,10 @@ body {
   duration-300
   selection:bg-select-light
   selection:dark:bg-select-dark
+	dark:bg-[#121212]
+	bg-white
+	dark:text-white
+	text-black
 }
 
 #__nuxt {

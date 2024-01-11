@@ -1,6 +1,6 @@
 <template>
   <div @click="()=>resultVisible=false" class="flex items-start min-h-full flex-col justify-between">
-    <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-3xl z-10 bg-gray-300 dark:bg-gray-900 justify-between h-12 shadow-sm">
+    <div class="sticky top-0 flex items-center mb-8 w-full backdrop-blur-3xl z-10 bg-gray-300 dark:bg-black justify-between h-12 shadow-sm">
       <div class="flex items-center" @click="handleRedirect(1)">
         <Icon
           name="oi:code"
@@ -9,13 +9,7 @@
       <div class="flex items-center">
         <div>
           <div @click.stop="()=>resultVisible=true" class="border rounded-lg h-9 mr-4 border-black/60 pl-2 flex align-middle bg-black/5 dark:bg-white/5">
-            <UButton
-              :padded="false"
-              icon="i-eva-search-fill"
-              size="sm"
-              variant="ghost"
-              class="icon-button hover:cursor-auto"
-            />
+						<div class="i-grommet-icons:search h-9 mr-2 bg-black dark:bg-white"/>
             <input v-model="searchParams" @input="handleSearch" class="focus:border-none focus:outline-none focus:appearance-none rounded-r-lg pl-2" />
           </div>
           <div v-if="resultVisible&&searchResults.length!==0" class="z-50 fixed top-13 mt-1 bg-white border-black/10 opacity-100 border dark:border-white/10 dark:bg-neutral-800 w-40 md:w-80 rounded-md py-4">
@@ -27,31 +21,18 @@
             </div>
           </div>
         </div>
-        <UButton
-          :padded="false"
-          icon="i-simple-icons-github"
-          size="sm"
-          variant="ghost"
-          class="icon-button"
-          @click="handleRedirect(2)"
-        />
+				<div
+					@click="handleRedirect(2)"
+					class="i-grommet-icons:github icon-button"/>
         <div class="w-1"/>
-        <UButton
-          :padded="false"
-          icon="i-bi-rss"
-          size="sm"
-          variant="ghost"
-          class="icon-button"
-          @click="handleRedirect(3)"
-        />
-        <UButton
-          @click="toggleColorMode"
-          :padded="false"
-          icon="i-fluent-dark-theme-24-filled"
-          size="xl"
-          variant="ghost"
-          class="icon-button"
-        />
+				<div
+					@click="handleRedirect(3)"
+					class="i-fluent:rss-24-filled icon-button"
+				/>
+				<div
+					@click="toggleColorMode"
+					class="i-fluent:dark-theme-24-filled icon-button"
+				/>
       </div>
     </div>
     <Toast title="RSS 订阅已复制到剪切板" class="transition-all duration-300" :class="showToast?'opacity-100':'opacity-0'" />

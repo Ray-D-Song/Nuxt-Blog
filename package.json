@@ -15,12 +15,14 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@iconify-json/fluent": "^1.1.45",
+    "@iconify-json/grommet-icons": "^1.1.10",
     "@nuxt/devtools": "latest",
-    "@nuxthq/ui": "^2.7.0",
-    "@nuxtjs/tailwindcss": "^6.10.4",
-    "@tailwindcss/typography": "^0.5.10",
     "@types/lodash": "^4.14.202",
     "@types/node": "^20.10.8",
+    "@unocss/preset-icons": "^0.58.3",
+    "@unocss/preset-typography": "^0.58.3",
+    "@unocss/transformer-directives": "^0.58.3",
     "clipboard-polyfill": "^4.0.2",
     "husky": "^8.0.3",
     "nuxt": "^3.9.1",
@@ -34,6 +36,8 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@pinia/nuxt": "^0.5.1",
     "@types/rss": "^0.0.30",
+    "@unocss/nuxt": "^0.58.3",
+    "@unocss/reset": "^0.58.3",
     "glob": "^10.3.10",
     "lodash": "^4.17.21",
     "node-fetch-native": "^1.6.1",
@@ -42,6 +46,7 @@
     "rss": "^1.2.2",
     "sass": "^1.69.7",
     "typescript": "5.1.6",
+    "unocss": "^0.58.3",
     "vue-tsc": "^1.8.27"
   }
 }

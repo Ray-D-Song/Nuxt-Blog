@@ -2,23 +2,21 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxt/ui',
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxt/content',
 		'@pinia/nuxt',
+		'@unocss/nuxt'
   ],
   colorMode: {
-    preference: 'dark'
+    preference: 'dark',
+		classSuffix: ''
   },
   experimental: {
     payloadExtraction: true,
     componentIslands: true
   },
   ssr: true,
-  ui: {
-    icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
-  },
   app: {
     head: {
       link: [

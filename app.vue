@@ -8,6 +8,7 @@
 <script setup lang="ts">
 import './app.css'
 import './assets/global.scss'
+import '@unocss/reset/tailwind.css'
 // @ts-expect-error virtual file
 import { globalMiddleware } from '#build/middleware'
 import { useContentStore } from '~/store/content'

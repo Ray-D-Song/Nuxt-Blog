@@ -14,9 +14,9 @@
         </span>
       </div>
     </div>
-    <div class="hidden md:block md:ml-16 markdown w-96">
+    <div class="hidden md:block md:ml-16 w-96">
     </div>
-    <div class="hidden md:block markdown fixed sm:w-2/6 lg:w-2/5 bottom-0 right-20 h-screen">
+    <div class="hidden md:block fixed sm:w-2/6 lg:w-2/5 bottom-0 right-20 h-screen">
       <div class="h-full flex flex-col justify-center">
         <div class="text-3xl italic">Ray-D-Song</div>
         <div class="text-xl my-5">My primary job is a web front-end development engineer. <br/> But I also dabble in various other technologies.</div>

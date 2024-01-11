@@ -3,7 +3,7 @@
   <div class="dark:bg-code-dark bg-code-light rounded-md dark:shadow-white/5 shadow-inner shadow-black/5 border border-zinc-400 p-2 shadow-sm mt-3">
     <div class="dark:border-b-white/70 border-b-black/20 border-b flex flex-row justify-between">
       <div class="opacity-60 pb-2 text-sm pl-4">{{language}}</div>
-      <UButton icon="i-eva-copy-fill" @click="copyCode" size="sm" variant="ghost" :padding="false" class="icon-button text-sm">copy</UButton>
+			<div @click="copyCode" class="i-fluent:copy-24-regular icon-button w-5 h-5" />
     </div>
     <div class="relative">
       <slot />
